@@ -3,11 +3,10 @@ import { Link, Outlet, useRoutes } from "react-router-dom";
 import Login from "./pages/login";
 import Shield from "./components/shield";
 import Home from "./pages/home";
-import Gallery from "./pages/gallery";
-import Announcments from "./pages/announcments";
-import Members from "./pages/members";
-import Achievements from "./pages/achievements";
 import EventsRoute from "./pages/events";
+import AnnouncementsRoute from "./pages/announcments";
+import MembersRoute from "./pages/members";
+import GalleryRoute from "./pages/gallery";
 
 function App() {
   const router = useRoutes([
@@ -35,23 +34,10 @@ function App() {
           path: "",
           element: <Home />,
         },
-        {
-          path: "acheivements",
-          element: <Achievements />,
-        },
-        {
-          path: "announcments",
-          element: <Announcments />,
-        },
+        AnnouncementsRoute,
         EventsRoute,
-        {
-          path: "gallery",
-          element: <Gallery />,
-        },
-        {
-          path: "members",
-          element: <Members />,
-        },
+        MembersRoute,
+        GalleryRoute,
       ],
     },
   ]);

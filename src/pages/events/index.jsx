@@ -1,6 +1,6 @@
 import { useContext, useEffect, useState } from "react";
 import { useForm } from "react-hook-form";
-import { Link, NavLink, Outlet, useRoutes } from "react-router-dom";
+import { NavLink, Outlet } from "react-router-dom";
 import { APIContext } from "../../components/shield";
 import GlobalConfig from "../../config";
 

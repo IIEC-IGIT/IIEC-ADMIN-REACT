@@ -25,13 +25,13 @@ export default function Home() {
           Members
         </Link>
         <Link
-          to="/acheivements"
+          to="/achievements"
           className="text-center text-neutral-content text-2xl font-medium hover:underline"
         >
           Achievements
         </Link>
         <Link
-          to="/announcments"
+          to="/announcements"
           className="text-center text-neutral-content text-2xl font-medium hover:underline"
         >
           Announcments
